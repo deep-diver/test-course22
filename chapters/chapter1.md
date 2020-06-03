@@ -1,8 +1,7 @@
 ---
-title: 'Chapter 1: Getting started'
+title: '1. 2장 - Python의 기본'
 description:
-  'This chapter will teach you about many cool things and introduce you to the
-  most important concepts of the course.'
+  '2장에서는 Python의 기본 개념을 다룹니다.'
 prev: null
 next: /chapter2
 type: chapter
