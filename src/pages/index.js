@@ -19,10 +19,10 @@ export default ({ data }) => {
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
 
             <section>
-                <h1 className={classes.subtitle}> INSERT CATCHY TAG LINE HERE </h1>
+                <h1 className={classes.subtitle}> 나만의 스마트워크 환경 만들기 </h1>
                 <div className={classes.introduction}>
                 <p>
-                    This is a good place to write what your course is about!  Dinosaurs? Neural Networks? LSTM? How to do taxes and not get bored? Write it here!   
+                    파이썬의 기본, 파이썬을 활용한 파일 입출력, MS 엑셀 및 워드, 공공데이터(CSV, JSON), 웹 크롤러, 잡 스케줄링, 머신러닝
                 </p>
                 </div>
             </section>

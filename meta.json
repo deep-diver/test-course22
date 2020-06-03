@@ -1,9 +1,9 @@
 {
-    "courseId": "course-starter-python",
-    "title": "My cool online course",
+    "courseId": "smart-work-in-python",
+    "title": "나만의 스마트워크 환경 만들기",
     "slogan": "A free online course",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna, in accumsan sapien dui ac mi. Pellentesque felis lorem, semper nec velit nec, consectetur placerat enim.",
-    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tristique libero at est congue, sed vestibulum tortor laoreet. Aenean egestas massa non commodo consequat. Curabitur faucibus, sapien vitae euismod imperdiet, arcu erat semper urna.",
+    "description": "현재 보고계신 웹 페이지는『나만의 스마트워크 환경 만들기』책 내용의 이해를 돕기 위해 제작되었습니다. 이론적인 내용이나, 주저리 저자가 떠드는 내용은 책을 참고해 주시면 됩니다. 이 웹 페이지의 주된 목적은 실제 코드를 작성하고, 실행하고, 결과를 확인해보는 실습입니다. 더불어 간단한 X-지선다형 문제도 제공됩니다.",
+    "bio": "이 웹 페이지와 관련 책을 작성한 저는『박찬성』이라고 합니다. 현재 한국전자통신연구원에서 연구 및 개발 업무를 담당하고 있습니다. Python을 포함한 다양한 언어에 관심이 많습니다.",
     "siteUrl": "https://course-starter-python.netlify.com",
     "twitter": "spacy_io",
     "fonts": "IBM+Plex+Mono:500|IBM+Plex+Sans:700|Lato:400,400i,700,700i",
@@ -17,9 +17,7 @@
     },
     "showProfileImage": true,
     "footerLinks": [
-        { "text": "Website", "url": "https://spacy.io" },
-        { "text": "Source", "url": "https://github.com/ines/course-starter-python" },
-        { "text": "Built with ♥", "url": "https://github.com/ines/course-starter-python" }
+        { "text": "GitHub", "url": "https://github.com/deep-diver" }
     ],
     "theme": "#de7878"
 }

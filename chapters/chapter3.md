@@ -2,8 +2,8 @@
 title: '2장 - Python의 기본'
 description:
   '2장에서는 Python의 기본 개념을 다룹니다.'
-prev: null
-next: /chapter3
+prev: /chapter2
+next: null
 type: chapter
 id: 1
 ---
