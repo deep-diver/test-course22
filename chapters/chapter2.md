@@ -76,53 +76,139 @@ id: 1
   </codeblock>
 </exercise>
 
-<!-- <exercise id="1" title="Introduction" type="slides">
+<exercise id="6" title="숫자 자료형" type="choice">
+  <h2>자료형의 파악</h2> <br/>
 
-<slides source="chapter1_01_introduction">
-</slides>
+  <p>
+    숫자는 정수(<code>integer</code>)와 부동소수(<code>floating point number</code>)로 표현될 수 있습니다. 쉽게는 소수점이 있고 없고 정도의 차이가 있다고 생각해볼 수 있습니다. 파이썬에서는 이 둘의 자료형을 <code>int</code>, <code>float</code> 라는 키워드로 규정하고 있습니다.
+  </p>
 
-</exercise>
+  <p>
+    <code>type</code> 함수를 이용하면, 값 또는 변수(에 포함된 값)의 자료형이 어떤것인지 손쉽게 알아내는것이 가능합니다. 아래의 연습문제를 통해서, <code>type</code> 함수의 사용법을 익혀보겠습니다.
+  </p>
 
-<exercise id="2" title="Getting Started">
+  <codeblock id="02_05">
+    힌트 없음
+  </codeblock>
 
-Let's ask some questions about the slides. Whats the correct answer?
+  <p>
+    아래의 것들 중 부동소수가 아닌 것은 어떤것일까요?
+  </p>
 
 <choice>
-<opt text="Answer one">
-
-This is not the correct answer.
-
-</opt>
-
-<opt text="Answer two" correct="true">
-
-Good job!
-
-</opt>
-
-<opt text="Answer three">
-
-This is not correct either.
-
-</opt>
+<opt text="34.1"></opt>
+<opt text="0.0"></opt>
+<opt text="8" correct="true"></opt>
+<opt text="99.99"></opt>
 </choice>
 
+  <h2>숫자 자료형에 사용 가능한 연산자</h2> <br/>
+  <p>
+    숫자 값들 끼리는 여러가지 연산자를 통해서, 여러가지 계산을 할 수 있습니다. 우리가 흔히 알고 있는 <code>+</code>(덧셈), <code>-</code>(뺄셈), <code>*</code>(곱셈), <code>/</code>(나눗셈)과 더불어 아래와 같이 보다 편리한 연산자를 제공합니다. 
+  </p>
+
+  <table>
+    <tr>
+      <th>연산자의 종류</th>
+      <th>연산자의 의미</th>
+    </tr>
+    <tr>
+      <th>A ** B</th>
+      <th>A 값을 B 값만큼 거듭제곱된 값을 반환합니다</th>
+    </tr>
+    <tr>
+      <th>A // B</th>
+      <th>A 값을 B 값으로 나누고, 소수점 이하는 버려진 값을 반환합니다</th>
+    </tr>
+    <tr>
+      <th>A % B</th>
+      <th>A 값을 B 값으로 나누고, 나머지만을 취하여 반환합니다</th>
+    </tr>
+    <tr>
+      <th>A ?= B</th>
+      <th>? 에는 모든 연산자가 사용가능합니다. <br/> A와 B에대한 계산을 한 뒤 그 결과를 A에 담습니다. <br/>예를들어 A += B는 A+B 값을 A에 할당합니다</th>
+    </tr>
+  </table>
+
+  <p>
+    아래의 연습문제에서 <code>+=</code> 연산자를 이용하여 두 변수의 값을 서로 더한다음 화면에 출력해 보세요.
+  </p>
+
+  <codeblock id="02_06">
+    힌트 없음
+  </codeblock>
+
+  <h2>숫자 자료형을 위해 제공되는 내장 함수/메서드</h2> <br/>
+  <p>
+    모든 숫자의 연산은 기본적인 연산자의 조합으로 충분히 가능하지만, 이미 널리 알려져서 많이 사용되는 연산 (로그, 반올림, 팩토리얼, 코사인, 등)을 위한 코드를 직접 작성하는것은 꽤 시간이 낭비되는 작업일 것입니다. Python는 이렇게 자주 사용되는 연산을 위한 내장된 방법을 함수와 같은 장치로서 제공합니다 (물론 제 3의 패키지를 활용할 수도 있습니다).
+  </p>
+
+  <table>
+    <tr>
+      <th>함수 종류</th>
+      <th>함수의 의미</th>
+    </tr>
+    <tr>
+      <th>abs(X)</th>
+      <th>X의 절대값을 반환합니다</th>
+    </tr>
+    <tr>
+      <th>round(X)</th>
+      <th>X에 소수점 이하의 값을 반올림하여 반환합니다</th>
+    </tr>
+    <tr>
+      <th>math.log(X)</th>
+      <th>밑을 10으로 하는 로그를 X에 적용한 값을 반환합니다</th>
+    </tr>
+    <tr>
+      <th>math.sin(X) | math.cos(X) | math.tan(X)</th>
+      <th>각각 X에 대한 삼각함수를 적용한 값을 반환합니다</th>
+    </tr>
+    <tr>
+      <th>math.fatorial(X)</th>
+      <th>X의 계승 값을 계산하여 반환합니다</th>
+    </tr>
+    <tr>
+      <th>math.exp(X)</th>
+      <th>상수 e를 X만큼 거듭제곱한 값을 반환합니다</th>
+    </tr>
+    <tr>
+      <th>math.sqrt(X)</th>
+      <th>X의 제곱근 값을 계산하여 반환합니다</th>
+    </tr>
+  </table>  
+
+  <p>
+    아래의 연습문제에서 주어진 숫자에 대한 <code>절대값</code>, <code>로그</code>, <code>계승</code>, <code>제곱근</code> 값이 계산된 결과를 화면에 출력해 보세요.
+  </p>
+
+  <codeblock id="02_07">
+    abs, math.log, math.factorial, math.sqrt
+  </codeblock>
 </exercise>
 
-<exercise id="3" title="First steps">
+<exercise id="7" title="리스트 자료형">
+  <h2>리스트 자료형의 단일 요소 접근</h2> <br/>
 
-This is a code exercise. The content can be formatted in simple Markdown – so
-you can have **bold text**, `code` or [links](https://spacy.io) or lists, like
-the one for the instructions below.
+  <p>
+    앞서 잠시 다뤄진 리스트(<code>list</code>)는 여러 데이터 뭉치를 논리적으로 모아서 관리하기 위한 자료형입니다. 이 때의 데이터 뭉치는 단일 자료형을 따를 수도 있지만, 서로 다른 자료형의 데이터를 섞어서 보관하는것도 가능합니다. 가령 <code>[1, "문자열", 1.1, ...]</code>과 같은 것이 가능하죠. 또한, 나중에 배우게될 <code>사용자 정의 자료형</code> 및 다양한 객체 또한 보관하는것이 가능합니다.
+  </p>
 
-- These are instructions and they can have bullet points.
-- The code block below will look for the files `exc_01_03`, `solution_01_03` and
-  `test_01_03` in `/exercises`.
+  <p>
+    리스트 자료형의 각 요소를 접근하는 방법은 <code>[ ]</code> 대괄호 연산자를 사용하는 것입니다. 가령 <code>리스트[0]<code> 과 같은 코드는 리스트의 첫 번째 요소를 접근할 수 있게 해줍니다. 0부터 시작됨에 주의하세요.
+  </p>  
 
-<codeblock id="01_03">
+  <p>
+    아래의 연습문제에서 주어진 리스트의 다섯번째 요소의 내용을 화면에 출력해보세요.
+  </p>
 
-This is a hint.
+  <codeblock id="02_08">
+    대괄호 연산자를 사용해 보세요
+  </codeblock>
 
-</codeblock>
+  <h2>리스트 자료형을 위해 제공되는 메서드</h2> <br/>
 
-</exercise> -->
+  <p>
+  d
+  </p>
+</exercise>

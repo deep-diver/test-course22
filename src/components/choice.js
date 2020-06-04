@@ -30,7 +30,7 @@ const Choice = ({ id = '0', children = [] }) => {
                 </p>
             ))}
             <Button variant="primary" onClick={handleAnswer}>
-                Submit
+                정답 확인
             </Button>
             {options.map(({ key, props }, i) => {
                 const isCorrect = !!props.correct
@@ -44,7 +44,7 @@ const Choice = ({ id = '0', children = [] }) => {
                                 [classes.answerLabelCorrect]: isCorrect,
                             })}
                         >
-                            {isCorrect ? "That's correct! " : 'Incorrect. '}
+                            {isCorrect ? "정답입니다! 🤩" : '정답이 아니에요 😢 '}
                         </strong>
                         {props.children}
                     </div>
