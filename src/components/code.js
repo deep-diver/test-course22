@@ -73,8 +73,8 @@ class CodeBlock extends React.Component {
             output: classes.output,
         }
         const hintActions = [
-            { text: 'Show solution', onClick: () => this.handleShowSolution() },
-            { text: 'Reset', onClick: () => this.handleReset() },
+            { text: '솔루션 보기', onClick: () => this.handleShowSolution() },
+            { text: '코드 초기화', onClick: () => this.handleReset() },
         ]
 
         return (
@@ -123,7 +123,7 @@ class CodeBlock extends React.Component {
                                     debug={debug}
                                     actions={({ runCode }) => (
                                         <>
-                                            <Button onClick={() => runCode()}>Run Code</Button>
+                                            <Button onClick={() => runCode()}>코드 실행 해보기</Button>
                                             {testFile && (
                                                 <Button
                                                     variant="primary"
